@@ -1,10 +1,10 @@
 # TVAE-RNA
-Installation
+# Installation
 
 
 Please first install the required packages using the specified versions listed in requirements.yml on your server.
 
-Testing
+# Testing
 
 We provide testing code in the test folder. You can use your own data to test our model; the input format should be consistent with the training code.
 
@@ -22,7 +22,7 @@ A .pkl file where the keys are RNA sequences and the values are their predicted 
 
 If you prefer not to generate violin plots, we also provide code for generating .ct files. You can use this to batch convert predictions into .ct format for your own test data.
 
-Training
+# Training
 
 
 The training code is located in the train folder. Example training data is provided in the data folder, and pre-trained model weights are included in the models folder.
@@ -41,7 +41,7 @@ To start training, simply run the following command in the current directory:
 
 python train.py
 
-GHA Algorithm
+# GHA Algorithm
 
 
 The executable and source code for the GHA algorithm are provided in the GHA folder. You can either use the precompiled binary or compile it yourself using the following steps:
@@ -65,3 +65,6 @@ echo -e "0.5 0.5 0.5 0.5\n0.5 0.5 0.5 0.5\n0.5 0.5 0.5 0.5\n0.5 0.5 0.5 0.5" > t
 
 5. Run the test:
 ./hungarian_rna test_fg.mat test_bg.mat
+
+# Citation
+If you use our code or models in your research, please cite our paper:
